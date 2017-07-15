@@ -1,0 +1,106 @@
+body {
+  background-color: #ffffff;
+}
+h1, h3{
+  color: #61B34F;
+}
+
+.container {
+  width: 600px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 350px;
+  background: inherit;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin-right: 2000px;
+}
+ul li {
+     display: inline-block;
+     list-style-type: none;
+ }
+
+input[type=text] {
+  display: block;
+  clear: both;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: white;
+  background-color: #61B34F;
+  width: 313px;
+  height: 100px;
+  text-align: right;
+  border: 0 solid;
+  padding-right: 20px;
+}
+
+input[type=text]:hover {
+  background: #82c276;
+  color: white;
+}
+
+.sh {
+  background: #61B34F;
+  width: 110px;
+  height: 100px;
+  color: white;
+  font-size: 1.8em;
+  font-weight: lighter;
+  box-shadow: none;
+  border: 0 solid;
+  align: center;
+}
+
+.sh:hover {
+  background: #82c276;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.sho {
+  background: #82c276;
+  width: 110px;
+  height: 100px;
+  color: black;
+  font-size: 2em;
+  font-weight: lighter;
+  box-shadow: none;
+  border: 0 solid;
+  align: center;
+  margin: auto;
+}
+
+.sho:hover {
+  background: #82c276;
+  color: white;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.shred {
+  background: #61B34F;
+  width: 110px;
+  height: 100px;
+  border: 0 solid;
+  color: white;
+  font-size: 2.5em;
+  font-weight: lighter;
+  align: left;
+  box-shadow: none;
+}
+
+.shred:hover {
+  background: #82c276;
+  color: red;
+  font-size: 3.3em;
+  font-weight: 200;
+  cursor: pointer;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TIY Calculator</title>
+  <link rel="stylesheet" href="main.css">
+
+  <body>
+    <div class="container">
+      <form name="cal">
+        <h1>
+  M4TH
+</h1>
+        <div class="content">
+          <table>
+            <tr>
+              <td>
+                <input type="button" class="shred" value=" C " onclick="reset()" />
+              </td>
+              <td>
+                <input type="text" id="sweet" size="22" name="input" value="" />
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <input type="button" class="sho" value=" ◄ " onclick="delChar(this)" />
+              </td>
+              <td>
+                <input type="button" class="sho" value=" √ " onclick="sqrt()" />
+              </td>
+              <td>
+                <input type="button" class="sho" value=" x² " onclick="sqr()" />
+              </td>
+              <td>
+                <input type="button" class="sho" value=" 1/x " onclick="inverse()" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" 7 " onclick="cal.input.value+='7'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 8 " onclick="cal.input.value+='8'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 9 " onclick="cal.input.value+='9'" />
+              </td>
+              <td>
+                <input type="button" class="sho" value=" ÷ " onclick="cal.input.value+='/'" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" 4 " onclick="cal.input.value+='4'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 5 " onclick="cal.input.value+='5'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 6 " onclick="cal.input.value+='6'" />
+              </td>
+              <td>
+                <input type="button" class="sho" value=" X " onclick="cal.input.value+='*'" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" 1 "  onclick="cal.input.value+='1'"  />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 2 " onclick="cal.input.value+='2'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" 3 " onclick="cal.input.value+='3'" />
+              </td>
+              <td>
+                <input type="button" class="sho" value=" - " onclick="cal.input.value+='-'" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="sh" value=" 0 " onclick="cal.input.value+='0'" />
+              </td>
+              <td>
+                <input type="button" class="sh" value=" . " onclick="cal.input.value+='.'" />
+              </td>
+              <td>
+                <input type="button" class="shred" style="width: 110px;" value=" = " onclick="result()" />
+              </td>
+              <td>
+                <input type="button" class="sho" value=" + " onclick="cal.input.value+='+'" />
+              </td>
+            </tr>
+          </table>
+      </form>
+      </div>
+
+      <ul>
+        <li id="history">
+          <h3>History:</h3></li>
+      </ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+
+</html>
