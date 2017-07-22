@@ -5,93 +5,97 @@
   <meta charset="utf-8">
   <title>TIY Calculator</title>
   <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
 
   <body>
     <div class="container">
       <form name="cal">
         <h1>
-  M4TH
+  Math!
 </h1>
         <div class="content">
           <table>
             <tr>
               <td>
-                <input type="button" class="shred" value=" C " onclick="reset()" />
+                <input type="button" id="clear" value=" C " />
               </td>
               <td>
-                <input type="text" id="sweet" size="22" name="input" value="" />
+                <div class="display">
+                  <input type="text" id="sweet" size="22" name="topbar" value="" />
+                  <input type="text" id="sweeter" size="22" name="botbar" value="0" />
+                </div>
               </td>
             </tr>
           </table>
           <table>
             <tr>
               <td>
-                <input type="button" class="sho" value=" ◄ " onclick="delChar(this)" />
+                <input type="button" id="backSpace" value=" ◄ " />
               </td>
               <td>
-                <input type="button" class="sho" value=" √ " onclick="sqrt()" />
+                <input type="button" class="symbol" value=" √ " />
               </td>
               <td>
-                <input type="button" class="sho" value=" x² " onclick="sqr()" />
+                <input type="button" class="symbol" value=" x² " />
               </td>
               <td>
-                <input type="button" class="sho" value=" 1/x " onclick="inverse()" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="button" class="sh" value=" 7 " onclick="cal.input.value+='7'" />
-              </td>
-              <td>
-                <input type="button" class="sh" value=" 8 " onclick="cal.input.value+='8'" />
-              </td>
-              <td>
-                <input type="button" class="sh" value=" 9 " onclick="cal.input.value+='9'" />
-              </td>
-              <td>
-                <input type="button" class="sho" value=" ÷ " onclick="cal.input.value+='/'" />
+                <input type="button" class="symbol" value=" 1/x " />
               </td>
             </tr>
             <tr>
               <td>
-                <input type="button" class="sh" value=" 4 " onclick="cal.input.value+='4'" />
+                <input type="button" class="button" value="7" />
               </td>
               <td>
-                <input type="button" class="sh" value=" 5 " onclick="cal.input.value+='5'" />
+                <input type="button" class="button" value="8" />
               </td>
               <td>
-                <input type="button" class="sh" value=" 6 " onclick="cal.input.value+='6'" />
+                <input type="button" class="button" value="9" />
               </td>
               <td>
-                <input type="button" class="sho" value=" X " onclick="cal.input.value+='*'" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="button" class="sh" value=" 1 "  onclick="cal.input.value+='1'"  />
-              </td>
-              <td>
-                <input type="button" class="sh" value=" 2 " onclick="cal.input.value+='2'" />
-              </td>
-              <td>
-                <input type="button" class="sh" value=" 3 " onclick="cal.input.value+='3'" />
-              </td>
-              <td>
-                <input type="button" class="sho" value=" - " onclick="cal.input.value+='-'" />
+                <input type="button" id="divide" value=" ÷ " />
               </td>
             </tr>
             <tr>
               <td>
-                <input type="button" class="sh" value=" 0 " onclick="cal.input.value+='0'" />
+                <input type="button" class="button" value="4" />
               </td>
               <td>
-                <input type="button" class="sh" value=" . " onclick="cal.input.value+='.'" />
+                <input type="button" class="button" value="5" />
               </td>
               <td>
-                <input type="button" class="shred" style="width: 110px;" value=" = " onclick="result()" />
+                <input type="button" class="button" value="6" />
               </td>
               <td>
-                <input type="button" class="sho" value=" + " onclick="cal.input.value+='+'" />
+                <input type="button" id="multiply" value=" X " />
+                <!-- </td> -->
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="button" value="1" />
+              </td>
+              <td>
+                <input type="button" class="button" value="2" />
+              </td>
+              <td>
+                <input type="button" class="button" value="3" />
+              </td>
+              <td>
+                <input type="button" id="subtract" value=" - " />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="button" value="0" />
+              </td>
+              <td>
+                <input type="button" class="button" value="." />
+              </td>
+              <td>
+                <input type="button" class="equals" value=" = " />
+              </td>
+              <td>
+                <input type="button" id="add" value=" + " />
               </td>
             </tr>
           </table>
@@ -100,8 +104,10 @@
 
       <ul>
         <li id="history">
-          <h3>History:</h3></li>
+          <h3>History:</h3>
+        </li>
       </ul>
+      <textarea id="textarea"></textarea>
     </div>
     <script src="main.js"></script>
   </body>

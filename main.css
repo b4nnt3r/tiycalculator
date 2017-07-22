@@ -1,13 +1,24 @@
 body {
   background-color: #ffffff;
 }
-h1, h3{
+
+h1, h3 {
   color: #61B34F;
+  font-weight: lighter;
+  font-family: Syncopate;
+}
+
+h3 {
+  padding-right: 100px;
+}
+
+form {
+  width: 305px;
 }
 
 .container {
-  width: 600px;
-  padding: 10px;
+  width: 1100px;
+  padding-left: 70px;
   display: flex;
   justify-content: center;
 }
@@ -20,12 +31,13 @@ h1, h3{
 
 table {
   border-collapse: collapse;
-  margin-right: 2000px;
 }
+
 ul li {
-     display: inline-block;
-     list-style-type: none;
- }
+  display: inline-block;
+  list-style-type: none;
+  width: 125px;
+}
 
 input[type=text] {
   display: block;
@@ -46,7 +58,7 @@ input[type=text]:hover {
   color: white;
 }
 
-.sh {
+.button {
   background: #61B34F;
   width: 110px;
   height: 100px;
@@ -58,14 +70,14 @@ input[type=text]:hover {
   align: center;
 }
 
-.sh:hover {
+.button:hover {
   background: #82c276;
   color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.sho {
+.symbol, #backSpace, #add, #subtract, #multiply, #divide {
   background: #82c276;
   width: 110px;
   height: 100px;
@@ -78,14 +90,14 @@ input[type=text]:hover {
   margin: auto;
 }
 
-.sho:hover {
+.symbol:hover, #backSpace:hover, #add:hover, #subtract:hover, #multiply:hover, #divide:hover {
   background: #82c276;
   color: white;
   font-size: 3em;
   cursor: pointer;
 }
 
-.shred {
+.equals, #clear {
   background: #61B34F;
   width: 110px;
   height: 100px;
@@ -97,10 +109,31 @@ input[type=text]:hover {
   box-shadow: none;
 }
 
-.shred:hover {
+.equals:hover, #clear:hover {
   background: #82c276;
   color: red;
   font-size: 3.3em;
   font-weight: 200;
   cursor: pointer;
+}
+
+textarea {
+  border: none;
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+  font-size: 3em;
+  font-weight: lighter;
+  color: #61B34F;
+  display: flex;
+  flex-direction: row;
+  /*scroll-behavior: auto;*/
+}
+
+#sweet {
+  height: 50%;
+}
+
+#sweeter {
+  height: 50%;
 }
