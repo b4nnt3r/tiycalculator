@@ -21,7 +21,7 @@ form {
   padding-left: 70px;
   display: flex;
   justify-content: center;
-}
+ }
 
 .content {
   width: 350px;
@@ -37,6 +37,10 @@ ul li {
   display: inline-block;
   list-style-type: none;
   width: 125px;
+}
+
+ {
+  outline: 0;
 }
 
 input[type=text] {
