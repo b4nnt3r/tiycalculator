@@ -51,7 +51,7 @@ equals.addEventListener("click", function(event) {
 });
 clear.addEventListener("click", function(event) {
   document.getElementById("sweet").value = "";
-  allnumbers = [];
+  allNumbers = [];
 });
 
 
